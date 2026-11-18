@@ -1,0 +1,6 @@
+/.cache/
+/.pytest_cache/
+/.ruff_cache/
+/.venv/
+/untracked/
+__pycache__/

@@ -1,0 +1,25 @@
+[project]
+name = 'scheming'
+version = '0.1.0'
+description = 'Cache and render public specification sources'
+requires-python = '>=3.12'
+dependencies = [
+    'beautifulsoup4',
+    'markdownify==1.2.3',
+    'pymupdf==1.28.2',
+    'pymupdf4llm==1.28.2',
+]
+
+[tool.ruff]
+line-length = 100
+target-version = 'py312'
+
+[tool.ruff.lint]
+extend-select = ['FBT003', 'S310', 'T201']
+
+[tool.ruff.lint.isort]
+split-on-trailing-comma = false
+
+[tool.ruff.format]
+quote-style = 'single'
+skip-magic-trailing-comma = true
